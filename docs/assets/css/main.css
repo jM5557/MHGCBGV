@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/earlyaccess/notosansjp.css");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #fff; }
+
+body {
+  overflow: hidden;
+  font-family: "Noto Sans JP", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text", serif; }
+
+button {
+  padding: 15px 10px;
+  text-align: center;
+  border: none;
+  background-color: #342d25;
+  border-radius: 1.5px;
+  font-size: 1.15rem;
+  font-family: Arial,Baskerville,monospace;
+  min-width: 45px;
+  margin: auto 10px auto auto;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer; }
+
+#app {
+  display: block;
+  width: 100%;
+  overflow-y: hidden;
+  text-align: center;
+  background-color: #625949; }
+  #app label {
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
+    background-color: #625949;
+    border-bottom: solid 4px #584d41; }
+    #app label h2 {
+      font-size: 1.10rem;
+      margin: 7.5px auto; }
+    #app label button {
+      margin-left: 15px; }
+    @media all and (max-width: 640px) {
+      #app label button {
+        padding: 5px;
+        margin-left: 5px; } }
+  #app input[type=text] {
+    border: none;
+    border-bottom: solid 1.5px #e95252;
+    border-radius: 2.5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    min-width: 550px;
+    padding: 15px 10px;
+    background-color: #584d41;
+    font-size: 1.20rem;
+    font-family: "Noto Sans JP", sans-serif;
+    -webkit-transition: -webkit-box-shadow 0.45s ease;
+    transition: -webkit-box-shadow 0.45s ease;
+    transition: box-shadow 0.45s ease;
+    transition: box-shadow 0.45s ease, -webkit-box-shadow 0.45s ease;
+    color: #fff; }
+    #app input[type=text]:focus {
+      outline: none;
+      border-bottom-color: #9ea5ff;
+      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    @media all and (max-width: 640px) {
+      #app input[type=text] {
+        min-width: 225px;
+        max-width: 250px;
+        padding: 4.5px 2.5px; } }
+  #app ul {
+    list-style-type: none;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 40px;
+    margin-bottom: 45px;
+    text-align: center;
+    height: calc(100vh - 204px);
+    overflow-y: auto;
+    background-color: #897a6b; }
+    @media all and (max-width: 640px) {
+      #app ul {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        margin-bottom: 0px;
+        height: calc(100vh - 145px); } }
+  #app .bg-list-item {
+    background-size: 204.8px 102.4px !important;
+    width: 204.8px;
+    height: 102.4px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 8px;
+    border-radius: 2.45px;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 0.30s ease;
+    transition: -webkit-transform 0.30s ease;
+    transition: transform 0.30s ease;
+    transition: transform 0.30s ease, -webkit-transform 0.30s ease;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    cursor: pointer; }
+    #app .bg-list-item:hover {
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      z-index: 2; }
+    #app .bg-list-item:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1e1e1e;
+      opacity: 0.20;
+      z-index: -1;
+      border-radius: 2.45px; }
+    #app .bg-list-item.hide {
+      -webkit-transform: scale(0);
+      transform: scale(0); }
+    #app .bg-list-item span {
+      width: 184.8px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: white;
+      display: block;
+      position: absolute;
+      background-color: #222;
+      background-color: rgba(1, 1, 1, 0.8);
+      bottom: -1px;
+      left: 0;
+      padding: 15px 10px;
+      border-bottom-left-radius: 2.45px;
+      border-bottom-right-radius: 2.45px; }
+    #app .bg-list-item:after {
+      content: "";
+      position: absolute;
+      bottom: 45px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 12px solid #222;
+      border-bottom: 12px solid rgba(1, 1, 1, 0.8); }
+    @media all and (max-width: 640px) {
+      #app .bg-list-item {
+        display: inline-block;
+        margin: 5px; } }
+    @media all and (max-width: 500px) {
+      #app .bg-list-item {
+        display: block;
+        margin: 5px auto;
+        background-size: 292.57143px 146.28571px !important;
+        width: 292.57143px;
+        height: 146.28571px; }
+        #app .bg-list-item span {
+          width: 272.57143px; } }
+
+/* ===== MODAL ===== */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  opacity: 0.75;
+  z-index: 99; }
+
+#modal-container {
+  position: fixed;
+  width: 550px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999; }
+  @media all and (max-width: 640px) {
+    #modal-container {
+      width: 80%; } }
+  @media all and (max-width: 500px) {
+    #modal-container {
+      width: 90%; } }
+  #modal-container h2 {
+    text-align: left;
+    font-size: 2.15rem;
+    margin: 15px auto; }
+  #modal-container img {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    @media all and (max-width: 640px) {
+      #modal-container img {
+        max-width: 85vw; } }
+    @media all and (max-width: 500px) {
+      #modal-container img {
+        max-width: 80vw; } }
+
+#close-modal-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 99999;
+  background-color: #625949; }
+
+/* ======== FOOTER ======= */
+footer {
+  margin-top: 2.5rem;
+  padding: 0.75rem;
+  max-width: 100%;
+  background-color: #6f5b4a; }
+  footer img {
+    max-width: 250px;
+    display: block;
+    margin: 20px auto; }
+  footer a {
+    color: #4c3e31;
+    text-decoration: none;
+    margin: 8px auto;
+    font-size: 13pt;
+    font-weight: bolder;
+    font-family: "Crimson Text", serif;
+    display: block;
+    text-align: center;
+    max-width: 400px; }
+    footer a img {
+      max-width: 50px; }
+    footer a:visited, footer a:hover {
+      color: #4c3e31; }

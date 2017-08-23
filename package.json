@@ -1,0 +1,39 @@
+{
+  "name": "mhgcbgviewer",
+  "version": "1.0.0",
+  "description": "A simple UI built with Vue to view guildcard backgrounds from the Monster Hunter franchise.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"System Ready...\"",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jm5557/MHGCBGV.git"
+  },
+  "author": "Javier Minchala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jm5557/MHGCBGV/issues"
+  },
+  "homepage": "https://github.com/jm5557/MHGCBGV#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.5",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.3",
+    "pug-loader": "^2.3.0",
+    "vue": "^2.4.2",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "^2.4.2"
+  }
+}
